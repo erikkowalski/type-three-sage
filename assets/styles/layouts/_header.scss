@@ -1,13 +1,64 @@
-.navbar-brand {
-	letter-spacing: 0.05em;
+.navbar-inverse {
+	background-image: url(../images/type.png);
 }
 
+.navbar-default {
+	background-color: rgba(248, 248, 248, 0.94);
+}
+
+.navbar-fixed-top {
+	.container-fluid {
+	max-width: 1200px;
+	}
+
+
+
+	.navbar-brand  {
+		font-family:"garamond-premier-pro";
+		font-weight: normal;
+		font-size: 1.8em;
+		font-weight: 100;
+		padding-right: 0.1em;
+		color: black;
+	}
+
+
 .navbar-right {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+
+	font-weight: 400;
 }
 
 .navbar-toggle {
 	border: none;
 	border-radius: 0px;
+}
+
+
+
+
+.description{
+	font-family:"garamond-premier-pro";
+	font-size:1em;
+	font-weight:100;
+	//color:$gray-lighter;
+	margin-top:1.5em;
+	float:left
+}
+
+	.dropdown-menu>li>a {
+		//color: $gray-light;
+		margin: 0.2em o;
+		@media (min-width:$screen-sm){
+			margin: 0.5em 0;
+		}
+	}
+
+}//.navbar-fixed-top
+
+.navbar-default .navbar-nav>li>a {
+	color: black;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+
 }

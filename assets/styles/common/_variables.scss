@@ -3,7 +3,7 @@ $icon-font-path:        "../fonts/";
 
 // Grid settings
 $main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$sidebar-sm-columns:    3;
 
 $bootstrap-sass-asset-helper: false !default;
 //
@@ -27,6 +27,7 @@ $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
+$red:							rgb(216, 0, 0)!default;
 
 
 //== Scaffolding
