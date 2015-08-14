@@ -1,0 +1,29 @@
+body {
+	padding-top: 100px;
+}
+
+p {
+	font-family: $font-family-serif;
+}
+
+.admin-bar .navbar{
+	padding-top: 32px;
+}
+comment-content img, .entry-content img, .widget img {
+	max-width: 100%
+}
+
+img[class*=align], img[class*=wp-image-] {
+	height: auto;
+}
+img.size-full {
+	max-width: 100%;
+	width: auto;
+}
+
+img.wp-post-image {
+	max-width: 100%;
+	height: auto;
+}
+
+

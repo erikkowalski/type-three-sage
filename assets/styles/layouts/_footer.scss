@@ -1,0 +1,98 @@
+//  --- 4 col bootstrap Footer style ----  //
+
+footer {
+	padding: 1em 0 3em 0;
+}
+
+.content-info {
+	background: #f8f8f8;
+	margin-bottom: 0;
+	margin-top: 1em;
+	border-top: 10px solid #eaeaea;
+	font-size: 1.1em;
+	p{
+		font-size: 1.1em;
+	}
+
+	h3 {
+		padding-top: 1.2em;
+		letter-spacing: .1em;
+		font-weight: 800;
+		font-size: 1em;
+		text-transform: uppercase;
+		padding-bottom: .5em;
+		border-bottom: 1px solid #c4c4c4;
+		color: black;
+	}
+	a {
+		color: black;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.widget {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		@media (min-width:768px) {
+			float: left;
+			width: 50%;
+		}
+
+		@media (min-width:992px) {
+			float: left;
+			width: 25%;
+		}
+
+	}
+
+} // ---> /.content-info
+
+footer {
+	border-top:15px solid #3e3e3e;
+//	padding:5em 5em 5em 5em;
+	//background:#0d0d0d;
+
+}
+
+footer h5 {
+	text-align: center;
+	padding-top: 2em;
+}
+
+footer p {
+	max-width:15em;
+	margin:0 auto;
+	padding-top:5em;
+	padding-bottom:0em;
+}
+
+footer .container {
+	padding:2em 0 1em 0;
+
+}
+
+footer img {
+	padding:1em 0 1em 0;
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+}
+
+.social-icons .img-wrap {
+	width:50px;
+	margin:0 auto;
+}
+
+footer img:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+}

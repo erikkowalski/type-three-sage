@@ -1,0 +1,29 @@
+.author {
+	margin-right: 1em;
+}
+
+.nav-links a {
+	display: inline-block;
+	background: black;
+	color: white;
+	padding: 1em;
+	&:hover {
+		background: $brand-primary;
+	}
+}
+
+.nav-previous {
+	float: left;
+}
+
+.nav-next {
+	float: right;
+}
+
+.single-post {
+	article {
+		header {
+			border-bottom: 2px solid black;
+		}
+	}
+}
