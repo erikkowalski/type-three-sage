@@ -32,9 +32,16 @@
 
 .home {
 
-
 	.wp-post-image {
 		margin: 0.5em 0 1em 0;
+	}
+
+	.twd {
+		h2 {
+			text-align: center;
+			padding: 1em;
+			font-family: $font-family-serif;
+		}
 	}
 
 

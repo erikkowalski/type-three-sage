@@ -21,7 +21,7 @@
 </section>
 <!-- Links & other resources -->
 
-<aside class="clearfix">
+<aside class="clearfix twd">
 <h2>This weeks Reading &amp; Exercise from Typographic Web Design</h2>
 <hr>
 	<section class="readings col-md-6">
