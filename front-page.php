@@ -1,7 +1,7 @@
 <?php // get_template_part('templates/page', 'header'); ?>
 
-<aside class="clearfix">
-<h2>This weeks Reading &amp; Exercise from Typographic Web Design</h2>
+<aside class="clearfix twd">
+<h2>This week's TWD reading &amp; exercise</h2>
 <hr>
 	<section class="readings col-md-6">
 
@@ -13,7 +13,7 @@ $twd_reading_args = [
 
 $twd_reading = new WP_Query( $twd_reading_args );
 		?>
-		<h3>TWD Reading Assignemnts</h3>
+		<h3>Reading Assignemnt</h3>
 
 		<?php while ( $twd_reading->have_posts() ) : $twd_reading->the_post(); ?>
 		<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?></a>
@@ -35,7 +35,7 @@ $twd_exercise_args = [
 
 $twd_exercise = new WP_Query( $twd_exercise_args );
 		?>
-		<h3>TWD Exercises</h3>
+		<h3>Exercise</h3>
 		<?php while ( $twd_exercise->have_posts() ) : $twd_exercise->the_post(); ?>
 		<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?></a>
 
