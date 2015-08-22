@@ -1,8 +1,10 @@
 <?php // get_template_part('templates/page', 'header'); ?>
 
 <aside class="clearfix twd">
-<h2>This week's TWD reading &amp; exercise</h2>
-<hr>
+
+<div class="container">
+    <h2>This week's TWD reading &amp; exercise</h2>
+
 	<section class="readings col-md-6">
 
 		<?php //Display Latest TWD Readings
@@ -18,7 +20,7 @@ $twd_reading = new WP_Query( $twd_reading_args );
 		<?php while ( $twd_reading->have_posts() ) : $twd_reading->the_post(); ?>
 		<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?></a>
 		<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
-		<div class="entry-content">
+		<div class="entry-content hidden-xs">
 			<?php the_excerpt();?>
 		</div>
 		<?php endwhile; wp_reset_postdata();?>
@@ -40,12 +42,13 @@ $twd_exercise = new WP_Query( $twd_exercise_args );
 		<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?></a>
 
 		<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
-		<div class="entry-content">
+		<div class="entry-content hidden-xs">
 			<?php the_excerpt();?>
 		</div>
 		<?php endwhile;wp_reset_postdata();?>
 
 	</section>
+	</div><!-- .container -->
 </aside>
 
 
