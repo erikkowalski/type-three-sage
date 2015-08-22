@@ -3,7 +3,7 @@
 // somewhere in your theme.
 ?>
 
-<header class="banner navbar navbar-default navbar-fixed-top" role="banner">
+<header class="banner navbar navbar-inverse navbar-fixed-top" role="banner">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
