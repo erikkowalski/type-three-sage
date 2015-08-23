@@ -10,16 +10,22 @@
         h2{
             text-align: center;
             text-transform: uppercase;
-            //border-bottom: 4px solid black;
-            margin: 1.5em 0.5em 0.5em 0.5em;
-            padding-bottom: 0.5em;
-
+            font-size: 1.4em;
+            letter-spacing: 0.1em;
+            @media (min-width:$screen-sm){
+                font-size: 2em;
+                margin: 1.5em 0.5em 0.5em 0.5em;
+                padding-bottom: 0.5em;
+            }
         }
 
         h3 {
             padding-bottom: 0.5em;
             border-bottom: 2px solid aliceblue;
             text-align: center;
+            span {
+                font-size:0.8em;
+            }
         }
 
         h4 {
@@ -28,35 +34,48 @@
             a{ color: aliceblue;
                 }
         }
+    } //.twd
+
+    .blog-feed {
+        article {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            @media (min-width:$screen-sm) {
+                float: left;
+                width: 50%;
+        }
+              &:first-child {
+              @media (min-width:$screen-sm) {
+                width: $screen-sm;
+              }
+              @media (min-width:$screen-md) {
+                width: $screen-md;
+              }
+              @media (min-width:$screen-lg) {
+                width: $screen-lg;
+              }
+            }//&:first-child
+            .entry-summary {
+                max-width: $screen-md;
+            }
+
+
+        } //article
+
+    }// blog feed
+
+
+
+
+} // .home
+
+.paged {
+    .twd {
+        display: none;
     }
 
-
-
-.top {
-
-
-	h1 {
-		font-size: 3.5em;
-		//text-transform: uppercase;
-		font-weight: 800;
-		border-bottom: 10px solid black;
-		letter-spacing: 0.03em;
-	}
-
-	h2 {
-		text-transform: uppercase;
-		font-weight: 800;
-		font-size: 2em;
-		line-height: 1em;
-		margin: 0em;
-		@media (max-width:$screen-sm){
-			letter-spacing: -0.03em;
-		}
-		@media (min-width:$screen-sm){
-		font-size: 3em;
-		}
-
-	}
 }
 
 
@@ -67,6 +86,6 @@
 
 
 
-} // .home
+
 
 
