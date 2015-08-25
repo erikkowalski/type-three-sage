@@ -63,3 +63,23 @@ function display_sidebar() {
 
   return $display;
 }
+
+function display_fullwidth() {
+  static $display;
+
+  if (!isset($display)) {
+    $conditionalCheck = new ConditionalTagCheck(
+      [
+        'is_front_page',
+        ['is_page_template', 'template-fullwidth.php']
+      ]
+    );
+
+    $display = apply_filters('sage/display_fullwidth', $conditionalCheck->result);
+  }
+  if ($display) {
+    return "container";
+  } else {
+    return "container-fluid";
+  }
+}

@@ -1,15 +1,16 @@
 //  --- 4 col bootstrap Footer style ----  //
 
 footer {
-	background-image: url(../images/type.png);
-	color: $gray-lighter;
 
-	padding: 1em 0 3em 0;
 }
 
 .content-info {
+    	background-image: url(../images/type.png);
+	color: $gray-lighter;
+
+	padding: 1em 0 3em 0;
 	margin-bottom: 0;
-	border-top: 10px solid #eaeaea;
+	border-top: 10px solid #121212;
 	font-size: 1.1em;
 	p{
 		font-size: 1.1em;
@@ -59,7 +60,7 @@ footer {
 } // ---> /.content-info
 
 footer {
-	border-top:15px solid #3e3e3e;
+
 //	padding:5em 5em 5em 5em;
 	//background:#0d0d0d;
 
@@ -103,6 +104,6 @@ footer img:hover {
 	font-weight: 100;
 	letter-spacing: 0.05em;
 	span{
-		color: $red;
+		color: $magenta;
 	}
 }

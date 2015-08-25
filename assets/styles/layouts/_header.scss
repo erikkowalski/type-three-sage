@@ -19,12 +19,14 @@
 		font-size: 1.8em;
 		font-weight: 100;
 		padding-right: 0.1em;
-		color: black;
+		//color: black;
 	}
 
 
 .navbar-right {
-
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 	font-weight: 400;
 }
 
@@ -40,7 +42,7 @@
 	font-family:"garamond-premier-pro";
 	font-size:1em;
 	font-weight:100;
-	//color:$gray-lighter;
+	color:$gray-lighter;
 	margin-top:1.5em;
 	float:left
 }
