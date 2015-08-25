@@ -26,6 +26,9 @@
             span {
                 font-size:0.8em;
             }
+            a {
+                color: aliceblue;
+            }
         }
 
         h4 {
@@ -48,11 +51,20 @@
             @media (min-width:$screen-sm) {
                 float: left;
                 width: 50%;
-        }
+                    }
+            @media (max-width:$screen-sm){
+                padding: 0;
+                header{
+                    padding: 1em;
+                }
+                }
+
               &:first-child {
+                   padding: 0;
                   .entry-summary {
                       @media (min-width:$screen-md){
                       border-bottom: 2px solid black;
+
                           }
                       margin-bottom: 2em;
                       max-width: $screen-sm;
@@ -95,6 +107,8 @@
 } // .home
 
 .paged {
+    padding-top: 100px;
+    background: white;
     .twd {
         display: none;
     }
@@ -106,8 +120,10 @@
            float: none;
         }
         article:first-child {
+            .entry-summary {width: 100%;}
              header{
                 margin-left: 0;
+
             }
         }
 

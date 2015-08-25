@@ -3,6 +3,7 @@
 
  <?php get_template_part('templates/twd'); ?>
 
+
 <section class="blog-feed ">
 <div class="container"><?php if (!have_posts()) : ?>
 <div class="alert alert-warning">
