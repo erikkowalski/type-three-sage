@@ -12,8 +12,8 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand hidden-sm" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-			<div class="description visible-xs visible-md visible-lg">&#43; HTML5 &amp; CSS3</div>
+			<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+			<div class="description visible-xs visible-md visible-lg">&#43; HTML &amp; CSS</div>
 
 		</div>
 		<nav class="collapse navbar-collapse navbar-right" role="navigation">

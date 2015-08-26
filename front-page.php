@@ -22,6 +22,8 @@
 	</div><!-- /.container -->
 
 </section>
+
+ <?php get_template_part('templates/readings'); ?>
 <!-- Links & other resources -->
 
 
