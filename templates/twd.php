@@ -1,14 +1,13 @@
 <aside class="clearfix twd">
 
-
-
-		<?php //Display Latest TWD Readings
+<div class="container">
+  		<?php //Display Latest TWD Readings
         $twd_reading_args = [
             'post_type' => 'twd_reading',
             'posts_per_page' => 1
         ];
         $twd_reading = new WP_Query( $twd_reading_args );?>
-        <div class="container">
+
     <h2>This week's TWD reading &amp; exercise</h2>
 
 	<section class="readings col-md-6">

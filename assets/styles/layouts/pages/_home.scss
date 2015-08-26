@@ -103,8 +103,20 @@
 
     }// blog feed
 
-
+    .readings-videos {
+        background: #ededed;
+        //color: aliceblue;
+        padding: 2em 0;
+            h2 {
+            text-align: center;
+            }
+        h4 {
+            text-align: center;
+        }
+         }
 } // .home
+
+
 
 .paged {
     padding-top: 100px;
@@ -115,21 +127,30 @@
 
     .blog-feed{
         background:white;
-            article {
+        article {
             width: 100%;
-           float: none;
-        }
-        article:first-child {
-            .entry-summary {width: 100%;}
-             header{
-                margin-left: 0;
-
+            float: none;
+                header{
+                    max-width: 760px;
+                      }
+               }
             }
-        }
+    .entry-summary {
+         border-bottom: 2px solid black;
 
+    } //.entry-summary
+   header {
+        @media(min-width:$screen-md){
+            margin-left: 4em;
+        }
+     @media(min-width:$screen-lg){
+            margin-left: 6em;
+        }
     }
 
-}
+}//.paged
+
+
 
 
 
