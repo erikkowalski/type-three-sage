@@ -8,7 +8,7 @@
         ];
         $twd_reading = new WP_Query( $twd_reading_args );?>
 
-    <h2>This week's TWD reading &amp; exercise</h2>
+    <h2>This week's <a href="http://www.typographicwebdesign.com">TWD</a> reading &amp; exercise</h2>
 
 	<section class="readings col-md-6">
         <?php while ( $twd_reading->have_posts() ) : $twd_reading->the_post(); ?>

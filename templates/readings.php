@@ -1,5 +1,4 @@
 <aside class="clearfix readings-videos">
-    <h2>Historical Readings &amp; Video tutorials</h2>
 
 		<?php //Display Latest hand outs and tutorial videos
         $twd_reading_args = [
@@ -8,6 +7,7 @@
         ];
         $twd_reading = new WP_Query( $twd_reading_args );?>
     <div class="container">
+    <h2>Historical Readings &amp; Video tutorials</h2>
 
     <?php while ( $twd_reading->have_posts() ) : $twd_reading->the_post(); ?>
 

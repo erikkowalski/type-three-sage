@@ -12,6 +12,9 @@
             text-transform: uppercase;
             font-size: 1.4em;
             letter-spacing: 0.1em;
+            a {
+                color: aliceblue;
+            }
             @media (min-width:$screen-sm){
                 font-size: 2em;
                 margin: 1.5em 0.5em 0.5em 0.5em;
@@ -41,7 +44,7 @@
 
     .blog-feed {
         background-image: url(../images/congruent_outline.png);
-        background: #2e2e2e;
+        background: #272727;
         article {
             background: white;
             position: relative;
@@ -73,6 +76,11 @@
               @media (min-width:$screen-sm) {
                 width: 720px;
               }
+            @media(min-width) and ( max-width:$screen-md )  {
+                header {
+                    padding: 1em;
+                }
+            }
               @media (min-width:$screen-md) {
                 width: 940px;
               }
@@ -107,12 +115,36 @@
         background: #ededed;
         //color: aliceblue;
         padding: 2em 0;
-            h2 {
-            text-align: center;
+            h2{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.4em;
+                letter-spacing: 0.1em;
+                border-bottom: 4px solid #ffffff;
+                padding-bottom: 1em;
+
+            @media (min-width:$screen-sm){
+                font-size: 2em;
+                margin: 1.5em 0.5em 0.5em 0.5em;
+                padding-bottom: 1em;
             }
-        h4 {
-            text-align: center;
         }
+        .entry-title {
+            a {
+                color: aliceblue;
+                display: inline-block;
+                width: 100%;
+                padding: 1em;
+            }
+            text-align: center;
+            background: $cyan;
+            margin: 2em 0 0 0;
+            font-size: 1.2em;
+            @media (min-width:$screen-sm){
+                font-size: 1.6em;
+                 margin: 1.6em 0 0 0;
+            }
+            }
          }
 } // .home
 
