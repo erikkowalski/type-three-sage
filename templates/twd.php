@@ -21,6 +21,7 @@
 			<?php the_excerpt();?>
 		</div>
 		<?php endwhile; wp_reset_postdata();?>
+		<a class="twd-readings" href="<?php echo $_SERVER['REQUEST_URI'];?>/twd_readings">View all readings</a>
 
 	</section>
 

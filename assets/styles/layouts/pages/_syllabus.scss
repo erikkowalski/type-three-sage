@@ -1,0 +1,42 @@
+.syllabus {
+    .main {
+        @media(min-width:$screen-md){
+        padding-right: 6em;
+            }
+    }
+    .main,.sidebar {
+        ul{
+            padding-left: 1em;
+        }
+
+        li {
+            font-family: $font-family-serif;
+            //list-style: circle;
+            margin:0.5em 0;
+            padding: 0;
+        }
+        h1{
+            margin-bottom: 0;
+        }
+        h2 {
+            margin-top: 0.3em;
+            margin-bottom: 0.6em;
+        }
+        h4 {
+            font-weight: 400;
+        }
+    } //.main
+    .sidebar {
+        @media (min-width:$screen-sm){
+        margin-top: 6em;
+            }
+        ul {
+            padding-left: 0;
+        }
+        li {
+            list-style:inside;
+        }
+
+
+    }
+}

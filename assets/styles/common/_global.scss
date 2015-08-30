@@ -36,4 +36,13 @@ img.wp-post-image {
 	height: auto;
 }
 
+.page-header h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    font-size: 3.5em;
+    @media(min-width:$screen-sm){
+        font-size: 5em;
+    }
+}
 
