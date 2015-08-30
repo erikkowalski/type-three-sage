@@ -7,6 +7,16 @@
         padding: 1em;
         background: $cyan;
         color: aliceblue;
+        .view-all a{
+            color: $yellow;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
         h2{
             text-align: center;
             text-transform: uppercase;
@@ -115,6 +125,13 @@
     }// blog feed
 
     .readings-videos {
+        .view-all {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 1em;
+            margin-top: 2em;
+        }
         background: #ededed;
         //color: aliceblue;
         padding: 2em 0;

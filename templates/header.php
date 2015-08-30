@@ -13,7 +13,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-			<div class="description visible-xs visible-md visible-lg">&#43; HTML &amp; CSS</div>
+			<div class="description visible-xs visible-md visible-lg"><span>&#43;</span> HTML &amp;  CSS</div>
 
 		</div>
 		<nav class="collapse navbar-collapse navbar-right" role="navigation">

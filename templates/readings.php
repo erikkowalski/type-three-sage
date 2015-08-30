@@ -9,6 +9,9 @@
     <div class="container">
     <h2>Historical Readings &amp; Video tutorials</h2>
 
+
+
+
     <?php while ( $twd_reading->have_posts() ) : $twd_reading->the_post(); ?>
 
         <section class="col-md-6">
@@ -18,5 +21,21 @@
 
         </section>
     <?php endwhile; wp_reset_postdata();?>
+                <div class="view-all col-md-6">
+            <?php // Link to All TWD Readings
+                $link =  "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                $link_text ="View All Tutorial Videos";
+                $escaped_link = htmlspecialchars($link, ENT_QUOTES, 'UTF-8');
+                echo '<a href="'.$escaped_link.'/tutorial_videos">'.$link_text.'</a>';
+            ?>
+            </div>
+           <div class="view-all col-md-6">
+            <?php // Link to All TWD Readings
+                $link =  "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                $link_text ="View All Historical Readings";
+                $escaped_link = htmlspecialchars($link, ENT_QUOTES, 'UTF-8');
+                echo '<a href="'.$escaped_link.'/historical_readings">'.$link_text.'</a>';
+            ?>
+            </div>
     </div>
 </aside>

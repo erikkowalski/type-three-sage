@@ -20,8 +20,16 @@
 		<div class="entry-content hidden-xs">
 			<?php the_excerpt();?>
 		</div>
+          <hr>
+           <div class="view-all">
+            <?php // Link to All TWD Readings
+                $link =  "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                $link_text ="View All Readings";
+                $escaped_link = htmlspecialchars($link, ENT_QUOTES, 'UTF-8');
+                echo '<a href="'.$escaped_link.'/twd_reading">'.$link_text.'</a>';
+            ?>
+            </div>
 		<?php endwhile; wp_reset_postdata();?>
-		<a class="twd-readings" href="<?php echo $_SERVER['REQUEST_URI'];?>/twd_readings">View all readings</a>
 
 	</section>
 
@@ -43,6 +51,15 @@
             <h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
             <div class="entry-content hidden-xs">
                 <?php the_excerpt();?>
+            </div>
+            <hr>
+           <div class="view-all">
+            <?php // Link to All TWD Readings
+                $link =  "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                $link_text ="View All Exercises";
+                $escaped_link = htmlspecialchars($link, ENT_QUOTES, 'UTF-8');
+                echo '<a href="'.$escaped_link.'/twd_exercise">'.$link_text.'</a>';
+            ?>
             </div>
 		<?php endwhile;wp_reset_postdata();?>
 
